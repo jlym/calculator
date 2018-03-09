@@ -1,0 +1,30 @@
+
+body {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+}
+section {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(6, 60px);
+    border: solid 1px black;
+    border-radius: 5px;
+    box-shadow: 5px 5px;
+
+
+}
+
+button {
+    background: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+.result {
+    grid-column: 1 / span 4;
+}
+
+.btn_0 {
+    grid-column: 1 / span 2;
+}
