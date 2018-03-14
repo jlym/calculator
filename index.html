@@ -7,17 +7,23 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+      function onLoad() {
+        console.log("Loaded!")
+      }
+    </script>
 
     <title>Calculator!</title>
   </head>
-  <body>
+  <body onload="onLoad()">
     <div class="container">
       <div class="py-5 text-center">
         <h2>Calculator</h2>
         <p class="lead">Below is an example calculator</p>
       </div>
       <div class="row justify-content-center">
-        <div class="col-6 border rounded py-2">
+        <div class="col-6 col-md-4 col-lg-3 border rounded py-2">
 
           <div class="row no-gutters">
             <div class="col-12 p-1">
