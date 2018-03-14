@@ -10,7 +10,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script>
       function onLoad() {
-        console.log("Loaded!")
+        $('button').click(function() {
+          $('#result').val($(this).data('value'))
+        })
       }
     </script>
 
@@ -27,7 +29,7 @@
 
           <div class="row no-gutters">
             <div class="col-12 p-1">
-              <input type="text" class="form-control" readonly>
+              <input id="result" type="text" class="form-control" readonly>
             </div>
           </div>
 
@@ -48,7 +50,7 @@
 
           <div class="row no-gutters">
             <div class="col-3 p-1">
-              <button type="button" class="btn btn-outline-secondary btn-block">7</button>
+              <button type="button" class="btn btn-outline-secondary btn-block" data-value="7">7</button>
             </div>
             <div class="col-3 p-1">
               <button type="button" class="btn btn-outline-secondary btn-block">8</button>
